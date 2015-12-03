@@ -43,6 +43,9 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
+  platforms :ruby do #linux
+    gem 'capistrano-rvm', '~> 0.1.1'
+  end
   gem 'web-console', '~> 2.0'
   gem 'capistrano', '~> 3.2.1'
   # gem 'capistrano-rvm', '~> 0.1.1'
